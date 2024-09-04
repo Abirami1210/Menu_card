@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body { 
+        font-family: Arial, sans-serif;
+    background:linear-gradient(rgb(149, 204, 149), rgb(247, 247, 119));  
+    background-repeat: no-repeat;
+font-family: cursive;
+    height: 100vh;
+    }
+        .product { margin-bottom: 10px;
+        font-family: cursive; }
+        #cart { margin-top: 20px; }
+        button{
+            font-family: cursive;
+            background-color: chartreuse;
+            outline: none;
+            border: 1px solid white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 400;
+        }
+        h1{
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>OUR Menu</h1>
+    <div class="product">
+        <span>Tea - $10</span>
+        <button onclick="addToCart('Tea', 10)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <span>coffee - $20</span>
+        <button onclick="addToCart('Coffee', 20)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <span>Milkshake - $50</span>
+        <button onclick="addToCart('Milkshake', 50)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <span>Butter Bun - $25</span>
+        <button onclick="addToCart('Butter Bun', 25)">Add to Cart</b    utton>
+    </div>
+    <div class="product">
+        <span>Puffs - $20</span>
+        <button onclick="addToCart('Puffs', 20)">Add to Cart</button>
+    </div>
+    <h2>Cart</h2>
+    <ul id="cart">
+        <!-- Cart items will appear here -->
+    </ul>
+    <p id="cart-summary">Total Items: 0 <br><br>Total Price: $0</p>
+    <script src="cart.js"></script>
+</body>
+</html>
